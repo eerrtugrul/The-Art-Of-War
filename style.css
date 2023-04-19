@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  background-color: #0a080a;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header img {
+  width: 150px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px black;
+  transition: color 1s, text-shadow 1s;
+}
+
+header nav a:hover {
+  color: crimson;
+  text-shadow: 2px 2px 10px crimson;
+  transition: all 1s;
+}
+
+/* karşılama ekranı */
+#welcome-sec {
+  background-image: url(main.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.welcome-text {
+  width: 90vw;
+}
+
+.welcome-text h1 {
+
+  text-align: center;
+  font-size: 80px;
+  font-weight: 600;
+  text-shadow: 2px 2px 10px black;
+}
+
+.welcome-text p {
+  max-width: 700px;
+  margin: 90px auto;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+
+#welcome-sec2 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  padding: 0 50px 50px;
+
+}
+
+.line-bottom p {
+  width: 600px;
+
+}
+
+#welcome-sec2 .welcome-sec2-left h1 {
+  line-height: 70px;
+  font-size: 70px;
+  border-bottom: 5px solid white;
+}
+
+#welcome-sec2 .welcome-sec2-left p {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+#welcome-sec2 .welcome-sec2-left p span {
+  border-bottom: 3px solid crimson;
+}
+
+.welcome-sec2-right {
+  width: 520px;
+  height: 620px;
+}
+
+#welcome-sec3 {
+
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 50%), url(sec-2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+}
+
+.title {
+
+  text-align: center;
+}
+
+.title h5 {
+  font-size: 24px;
+
+}
+
+.title h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.boxes {
+  width: 620px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.box {
+  width: 300px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.box:last-child {
+  width: 610px;
+}
+
+.box h2 {
+  color: crimson;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.box p {
+  font-size: 18px;
+}
+
+#welcome-sec4 {
+  background-image: url(sec-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+
+.left {
+  width: 600px;
+  height: 500px;
+  padding: 50px;
+
+}
+
+
+.left h3 {
+
+
+  font-size: 24px;
+
+}
+
+.left h1 {
+  font-size: 90px;
+
+}
+
+.left p {
+
+  padding-top: 50px;
+  margin-bottom: 70px;
+
+}
+
+.left button {
+
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  background-color: rgb(240, 25, 25);
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.left button:hover {
+
+  background-color: #0a080a;
+  color: red;
+  transition: all 0.4s;
+
+}
+
+.right {
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: end;
+}
+
+.card {
+  width: 450px;
+  background-color: rgb(35, 35, 35);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card:nth-child(2) {
+  align-self: flex-start;
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.info-detail h1 {
+  color: crimson;
+}
+
+small {
+  color: gray;
+}
+
+/* 1500px altında */
+@media (max-width: 1500px) {
+  .welcome-sec2-right {
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+
+/* 110px altında */
+
+@media (max-width: 1100px) {
+  #welcome-sec1 {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #welcome-sec2 {
+    flex-direction: column;
+  }
+
+  .welcome-sec2-right {
+
+    max-width: 600px;
+    max-height: 600px;
+    margin-top: 40px;
+  }
+
+  #welcome-sec4 {
+    flex-direction: column;
+  }
+
+  #welcome-sec4 .right {
+    align-items: center;
+  }
+
+  .card:nth-child(2) {
+    align-self: center;
+  }
+}
